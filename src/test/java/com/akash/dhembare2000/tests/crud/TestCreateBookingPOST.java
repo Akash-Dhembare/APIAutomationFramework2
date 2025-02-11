@@ -1,2 +1,19 @@
-package com.akash.dhembare2000.tests.crud;public class testCreateBookingPOST {
+package com.akash.dhembare2000.tests.crud;
+
+import io.qameta.allure.Description;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class TestCreateBookingPOST {
+
+    @Owner("Akash Dhembare")
+    @Severity(SeverityLevel.BLOCKER)
+    @Description ("Verify that POST request is working fine.")
+    @Test
+    public void testVerifyCreateBookingPOST01(){
+        Assert.assertEquals(true, true);
+    }
 }

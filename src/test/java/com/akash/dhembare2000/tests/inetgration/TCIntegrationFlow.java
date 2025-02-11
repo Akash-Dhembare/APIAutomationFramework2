@@ -1,2 +1,7 @@
-package com.akash.dhembare2000.tests.inetgration;public class TCIntegrationFlow {
+package com.akash.dhembare2000.tests.inetgration;
+
+import org.testng.annotations.Test;
+
+public class TCIntegrationFlow {
+
 }

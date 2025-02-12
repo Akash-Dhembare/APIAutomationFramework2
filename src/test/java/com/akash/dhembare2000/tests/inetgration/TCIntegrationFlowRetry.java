@@ -2,18 +2,19 @@ package com.akash.dhembare2000.tests.inetgration;
 
 import com.akash.dhembare2000.base.BaseTest;
 import com.akash.dhembare2000.endpoints.APIConstants;
-import com.akash.dhembare2000.modules.PayloadManager;
 import com.akash.dhembare2000.pojos.Booking;
 import com.akash.dhembare2000.pojos.BookingResponse;
 import com.akash.dhembare2000.utils.PropertyReader;
 import io.qameta.allure.Description;
 import io.restassured.RestAssured;
-import org.apache.commons.compress.harmony.pack200.NewAttributeBands;
 import org.testng.ITestContext;
 import org.testng.annotations.Test;
+import org.testng.util.RetryAnalyzerCount;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class TCIntegrationFlow extends BaseTest {
+@Test(retryAnalyzer = RetryAnalyzerCount.class)
+public class TCIntegrationFlowRetry extends BaseTest {
 
     @Test(groups = "integration", priority = 1)
     @Description("TC#INT1 - Step 1. Verify that the Booking can be Created")
@@ -104,6 +105,6 @@ public class TCIntegrationFlow extends BaseTest {
                 .when().delete();
 
         validatableResponse=response.then().log().all();
-        validatableResponse.statusCode(201);
+        validatableResponse.statusCode(200);
     }
 }

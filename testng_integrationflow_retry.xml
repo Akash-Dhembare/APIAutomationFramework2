@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners><listener class-name="com.akash.dhembare2000.listeners.RetryListener"></listener></listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/teju3/IdeaProjects/APIAutomationFramework2">
+        <classes>
+            <class name="com.akash.dhembare2000.tests.inetgration.TCIntegrationFlowRetry">
+            </class>
+        </classes>
+    </test>
+</suite>

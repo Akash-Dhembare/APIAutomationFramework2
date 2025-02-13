@@ -117,4 +117,20 @@ public class PayloadManager {
 
     }
 
+    public String partialUpdatePayloadAsString(){
+        Booking booking= new Booking();
+        booking.setFirstname("Akshata");
+        booking.setLastname("Ghogare");
+
+        System.out.println(booking);
+
+        // Java object -> JSON String (bytestream) -> serialization
+        gson= new Gson();
+        String jsonStringPayload = gson.toJson(booking);
+        System.out.println(jsonStringPayload);
+
+        return jsonStringPayload;
+
+    }
+
 }

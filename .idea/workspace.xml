@@ -5,20 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d14c2017-1a49-45ef-a88e-3dd62d008034" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/akash/dhembare2000/pojos/vwo/VWOLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/akash/dhembare2000/tests/ddt/vwo/VWOLoginAPIDDT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/akash/dhembare2000/tests/inetgration/TCIntegrationFlowRetry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/akash/dhembare2000/utils/PropertyReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/akash/dhembare2000/utils/UtilsExcel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/TD.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/data.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng_integrationflow.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng_integrationflow_retry.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/akash/dhembare2000/tests/crud/TestDeleteBookingDELETE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/akash/dhembare2000/tests/crud/TestGetAllBookingsGET.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/akash/dhembare2000/tests/crud/TestGetBookingGET.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/akash/dhembare2000/tests/crud/TestPartialUpdateBookingPATCH.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/akash/dhembare2000/tests/crud/TestUpdateBookingPUT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/akash/dhembare2000/tests/inetgration/TCIntegrationFlowScenario2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng_integrationflow_scenario2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/akash/dhembare2000/modules/PayloadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/akash/dhembare2000/modules/PayloadManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/akash/dhembare2000/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/akash/dhembare2000/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/akash/dhembare2000/listeners/RetryAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/akash/dhembare2000/listeners/RetryAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/akash/dhembare2000/listeners/RetryListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/akash/dhembare2000/listeners/RetryListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/akash/dhembare2000/tests/crud/TestCreateBookingPOST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/akash/dhembare2000/tests/crud/TestCreateBookingPOST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/akash/dhembare2000/tests/inetgration/TCIntegrationFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/akash/dhembare2000/tests/inetgration/TCIntegrationFlow.java" afterDir="false" />
     </list>
@@ -70,7 +65,15 @@
     "TestNG.C:/Users/teju3/IdeaProjects/APIAutomationFramework2/testng.xml.executor": "Run",
     "TestNG.C:/Users/teju3/IdeaProjects/APIAutomationFramework2/testng_integrationflow.xml.executor": "Run",
     "TestNG.C:/Users/teju3/IdeaProjects/APIAutomationFramework2/testng_integrationflow_retry.xml.executor": "Run",
+    "TestNG.C:/Users/teju3/IdeaProjects/APIAutomationFramework2/testng_integrationflow_scenario2.xml.executor": "Run",
     "TestNG.TestCreateBookingPOST.testVerifyCreateBookingPOST01.executor": "Run",
+    "TestNG.TestDeleteBookingDELETE.executor": "Run",
+    "TestNG.TestDeleteBookingDELETE.testDeleteBooking.executor": "Run",
+    "TestNG.TestGetAllBookingsGET.testGetAllBookingIDs.executor": "Run",
+    "TestNG.TestGetBookingGET.testGetBookingDetailsByID.executor": "Run",
+    "TestNG.TestPartialUpdateBookingPATCH.executor": "Run",
+    "TestNG.TestUpdateBooking.executor": "Run",
+    "TestNG.TestUpdateBooking.testUpdateBooking.executor": "Run",
     "TestNG.VWOLoginAPIDDT.testVWOLogin.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -88,48 +91,35 @@
       <recent name="com.akash.dhembare2000.tests.inetgration" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.VWOLoginAPIDDT.testVWOLogin">
-    <configuration name="C:/Users/teju3/IdeaProjects/APIAutomationFramework2/testng_integrationflow_retry.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="APIAutomationFramework2" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_integrationflow_retry.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/teju3/IdeaProjects/APIAutomationFramework2/testng_integrationflow.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="APIAutomationFramework2" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_integrationflow.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/teju3/IdeaProjects/APIAutomationFramework2/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="APIAutomationFramework2" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VWOLoginAPIDDT.testVWOLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestDeleteBookingDELETE">
+    <configuration name="TestDeleteBookingDELETE" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIAutomationFramework2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.akash.dhembare2000.tests.ddt.vwo.*" />
+          <option name="PATTERN" value="com.akash.dhembare2000.tests.crud.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.akash.dhembare2000.tests.ddt.vwo" />
-      <option name="MAIN_CLASS_NAME" value="com.akash.dhembare2000.tests.ddt.vwo.VWOLoginAPIDDT" />
-      <option name="METHOD_NAME" value="testVWOLogin" />
+      <option name="PACKAGE_NAME" value="com.akash.dhembare2000.tests.crud" />
+      <option name="MAIN_CLASS_NAME" value="com.akash.dhembare2000.tests.crud.TestDeleteBookingDELETE" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDeleteBookingDELETE.testDeleteBooking" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIAutomationFramework2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.akash.dhembare2000.tests.crud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.akash.dhembare2000.tests.crud" />
+      <option name="MAIN_CLASS_NAME" value="com.akash.dhembare2000.tests.crud.TestDeleteBookingDELETE" />
+      <option name="METHOD_NAME" value="testDeleteBooking" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -137,10 +127,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPartialUpdateBookingPATCH" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIAutomationFramework2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.akash.dhembare2000.tests.crud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.akash.dhembare2000.tests.crud" />
+      <option name="MAIN_CLASS_NAME" value="com.akash.dhembare2000.tests.crud.TestPartialUpdateBookingPATCH" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUpdateBookingPUT" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIAutomationFramework2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.akash.dhembare2000.tests.crud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.akash.dhembare2000.tests.crud" />
+      <option name="MAIN_CLASS_NAME" value="com.akash.dhembare2000.tests.crud.TestUpdateBookingPUT" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUpdateBookingPUT.testUpdateBooking" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIAutomationFramework2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.akash.dhembare2000.tests.crud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.akash.dhembare2000.tests.crud" />
+      <option name="MAIN_CLASS_NAME" value="com.akash.dhembare2000.tests.crud.TestUpdateBookingPUT" />
+      <option name="METHOD_NAME" value="testUpdateBooking" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -149,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.VWOLoginAPIDDT.testVWOLogin" />
-        <item itemvalue="TestNG.&lt;default&gt;" />
-        <item itemvalue="TestNG.C:/Users/teju3/IdeaProjects/APIAutomationFramework2/testng_integrationflow_retry.xml" />
-        <item itemvalue="TestNG.C:/Users/teju3/IdeaProjects/APIAutomationFramework2/testng_integrationflow.xml" />
-        <item itemvalue="TestNG.C:/Users/teju3/IdeaProjects/APIAutomationFramework2/testng.xml" />
+        <item itemvalue="TestNG.TestDeleteBookingDELETE" />
+        <item itemvalue="TestNG.TestDeleteBookingDELETE.testDeleteBooking" />
+        <item itemvalue="TestNG.TestPartialUpdateBookingPATCH" />
+        <item itemvalue="TestNG.TestUpdateBookingPUT" />
+        <item itemvalue="TestNG.TestUpdateBookingPUT.testUpdateBooking" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739283115821</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=".">
+      <option name="closed" value="true" />
+      <created>1739365851536</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1739365851536</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

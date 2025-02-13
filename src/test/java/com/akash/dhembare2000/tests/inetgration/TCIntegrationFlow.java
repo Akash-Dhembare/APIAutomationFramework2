@@ -65,8 +65,8 @@ public class TCIntegrationFlow extends BaseTest {
     @Test(groups = "integration", priority = 3)
     @Description("TC#INT1 - Step 3. Verify Updated Booking by ID")
     public void testUpdateBookingByID(ITestContext iTestContext){
-        System.out.println("Token -> "+iTestContext.getAttribute("token"));
-        String token= (String) iTestContext.getAttribute("token");
+//        System.out.println("Token -> "+iTestContext.getAttribute("token"));
+//        String token= (String) iTestContext.getAttribute("token");
 
         Integer bookingid=(Integer) iTestContext.getAttribute("bookingid");
 
@@ -74,7 +74,7 @@ public class TCIntegrationFlow extends BaseTest {
         String basePathPUT= APIConstants.CREATE_UPDATE_BOOKING_URL+"/"+bookingid;
         requestSpecification.basePath(basePathPUT);
 
-        response=RestAssured.given(requestSpecification).cookie("token", token)
+        response=RestAssured.given(requestSpecification)
                 .when().body(payloadManager.fullUpdatePayloadAsString()).put();
 
         validatableResponse=response.then().log().all();

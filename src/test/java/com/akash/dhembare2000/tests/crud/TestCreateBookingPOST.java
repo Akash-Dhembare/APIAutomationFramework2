@@ -9,8 +9,10 @@ import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
 import org.hamcrest.Matchers;
 import org.testng.Assert;
+import org.testng.ITestContext;
 import org.testng.annotations.Test;
 import static org.assertj.core.api.Assertions.*;
 
@@ -20,7 +22,8 @@ public class TestCreateBookingPOST extends BaseTest {
     @Severity(SeverityLevel.BLOCKER)
     @Description ("Verify that POST request is working fine.")
     @Test
-    public void testVerifyCreateBookingPOST01(){
+    public void testVerifyCreateBookingPOST01(ITestContext iTestContext){
+
         requestSpecification.basePath(APIConstants.CREATE_UPDATE_BOOKING_URL);
 
         response = RestAssured.given(requestSpecification)
@@ -41,5 +44,7 @@ public class TestCreateBookingPOST extends BaseTest {
 
        // TestNG Assertions
         assertActions.verifyStatusCode(response, 200);
+
+        iTestContext.setAttribute("bookingid", bookingResponse.getBookingid());
     }
 }
